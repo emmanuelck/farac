@@ -29,7 +29,7 @@
     </div>
     
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,12 +39,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#"><span>Inicio</span></a>
                     </li>
                     
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Facultad
+                            <span>Facultad</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Nuestro equipo</a></li>
@@ -52,17 +52,67 @@
                             <li><a class="dropdown-item" href="#">Escuela de aquitectura</a></li>
                         </ul>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Programas de estudio</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ítem 1</a></li>
+                            <li><a class="dropdown-item" href="#">Ítem 2</a></li>
+                            <li><a class="dropdown-item" href="#">Ìtem 3</a></li>
+                        </ul>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Investigaciones</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ítem 1</a></li>
+                            <li><a class="dropdown-item" href="#">Ítem 2</a></li>
+                            <li><a class="dropdown-item" href="#">Ìtem 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>VIME</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ítem 1</a></li>
+                            <li><a class="dropdown-item" href="#">Ítem 2</a></li>
+                            <li><a class="dropdown-item" href="#">Ìtem 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Educación continua</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ítem 1</a></li>
+                            <li><a class="dropdown-item" href="#">Ítem 2</a></li>
+                            <li><a class="dropdown-item" href="#">Ìtem 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Publicaciones</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ítem 1</a></li>
+                            <li><a class="dropdown-item" href="#">Ítem 2</a></li>
+                            <li><a class="dropdown-item" href="#">Ìtem 3</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#"><span>Contacto</span></a>
+                    </li> -->
                 </ul>
             </div>
         </div>
     </nav>
     
     <!-- SLIDE HOME -->
-    <section class="slide-home">
+    <section class="slide-home" style="background-image: url(images/slide-1.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -133,7 +183,7 @@
     </section>
 
     <!-- SECTION POSTGRADOS -->
-    <section class="mt-large">
+    <section class="mt-large gradient-gray-bottom pb-large bg-decoration">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -180,17 +230,18 @@
     </section>
 
     <!-- SECTION NOTICIAS/AGENDA -->
-    <section class="mt-large">
+    <section class="mt-medium">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-lg-8">
-                    <h2>Noticias</h2>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h2>Noticias</h2>
+                        <a href="#" style="color: rgb(34, 34, 34);text-decoration: none;font-weight: 900;">Ver todas</a>
+                    </div>
                     <div class="noticias-wrap mt-4 row row-gap-4">
                         <div class="col-12 noticia-item">
                             <a href="#" class="card-c">
-                                <div class="card-c-thumbnail">
-                                    <img src="images/card-c-thumbnail-demo.jpg" alt="">
-                                </div>
+                                
                                 <div class="card-c-content">
                                     <small>18/09/2023</small>
                                     <h3>Título noticia, este puede ser largo</h3>
@@ -198,14 +249,15 @@
                                     <div class="card-c-vermas">
                                         <span>Ir a la noticia</span> <i class="fa-solid fa-arrow-right"></i>
                                     </div>
+                                </div>
+                                <div class="card-c-thumbnail">
+                                    <img src="images/card-c-thumbnail-demo.jpg" alt="">
                                 </div>
                             </a>
                         </div>
                         <div class="col-12 noticia-item">
                             <a href="#" class="card-c">
-                                <div class="card-c-thumbnail">
-                                    <img src="images/card-c-thumbnail-demo.jpg" alt="">
-                                </div>
+                                
                                 <div class="card-c-content">
                                     <small>18/09/2023</small>
                                     <h3>Título noticia, este puede ser largo</h3>
@@ -213,14 +265,15 @@
                                     <div class="card-c-vermas">
                                         <span>Ir a la noticia</span> <i class="fa-solid fa-arrow-right"></i>
                                     </div>
+                                </div>
+                                <div class="card-c-thumbnail">
+                                    <img src="images/card-c-thumbnail-demo.jpg" alt="">
                                 </div>
                             </a>
                         </div>
                         <div class="col-12 noticia-item">
                             <a href="#" class="card-c">
-                                <div class="card-c-thumbnail">
-                                    <img src="images/card-c-thumbnail-demo.jpg" alt="">
-                                </div>
+                                
                                 <div class="card-c-content">
                                     <small>18/09/2023</small>
                                     <h3>Título noticia, este puede ser largo</h3>
@@ -229,15 +282,24 @@
                                         <span>Ir a la noticia</span> <i class="fa-solid fa-arrow-right"></i>
                                     </div>
                                 </div>
+                                <div class="card-c-thumbnail">
+                                    <img src="images/card-c-thumbnail-demo.jpg" alt="">
+                                </div>
                             </a>
                         </div>
-                        <div class="col-12 text-end mt-5">
+                        <!-- <div class="col-12 text-end mt-5">
                             <a href="#" class="btn btn-primary">Ver más noticias</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
+                <div class="col-12 col-lg-1">
+                    <span class="divider"></span>
+                </div>
                 <div class="col-12 col-lg-3">
-                    <h2>Agenda</h2>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h2>Agenda</h2>
+                        <a href="#" class="link">Ver agenda completa</a>
+                    </div>
                     <div class="row mt-4 row-gap-2">
                         <div class="col-12">
                             <a href="#" class="card-d card-d-green">
@@ -280,11 +342,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-12 text-center mt-4">
                             <a href="#" class="btn btn-primary">Ver agenda completa</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
